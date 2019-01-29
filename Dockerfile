@@ -40,6 +40,8 @@ RUN zypper install -y \
       texlive-mhchem \
       texlive-acro
 RUN zypper install -y zip unzip
+RUN zypper install -y texlive-pythontex texlive-pythontex-bin
+RUN zypper install -y texlive-latexdiff-bin
 RUN perl -MCPAN -e 'install Algorithm::Diff'
 RUN mkdir cwd
 RUN zypper clean --all
