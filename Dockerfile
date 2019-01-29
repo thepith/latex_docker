@@ -42,6 +42,7 @@ RUN zypper install -y \
 RUN zypper install -y zip unzip
 RUN zypper install -y texlive-pythontex texlive-pythontex-bin
 RUN zypper install -y texlive-latexdiff-bin
+RUN zypper install -y python2-pygments python3-pygments
 RUN perl -MCPAN -e 'install Algorithm::Diff'
 RUN mkdir cwd
 RUN zypper clean --all
